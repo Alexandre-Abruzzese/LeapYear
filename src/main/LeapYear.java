@@ -17,6 +17,10 @@ public class LeapYear {
         {
             return "not leap by 4 and 100";
         }
+        else if (year%4 != 0)
+        {
+            return "not leap if divisible by 4";
+        }
         return "";
     }
 }
