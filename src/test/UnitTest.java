@@ -12,6 +12,6 @@ public class UnitTest {
 
     @Test
     public void should_return_leap_year_if_divisible_by_400(){
-        assertThat(LeapYear.LeapYear(), equalTo("LeapYear"));
+        assertThat(LeapYear.LeapYear(year), equalTo("LeapYear"));
     }
 }
