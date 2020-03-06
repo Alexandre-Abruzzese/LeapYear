@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 
 public class UnitTest {
     private static final LeapYear LeapYear = new LeapYear();
-    public int year = 1900;
+    public int year = 2008;
 
     @Test
     public void should_return_leap_year_if_divisible_by_400(){

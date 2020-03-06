@@ -13,6 +13,10 @@ public class LeapYear {
         {
             return "not leap by 100 and 400";
         }
+        else if (year%4 == 0 && year%100 != 0)
+        {
+            return "not leap by 4 and 100";
+        }
         return "";
     }
 }
