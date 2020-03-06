@@ -16,12 +16,12 @@ public class UnitTest {
     }
 
     @Test
-    public void should_return_not_leap_year_by_100_and_400(){
+    public void should_return_not_leap_year_if_divisible_by_100_and_400(){
         assertThat(LeapYear.LeapYear(year), equalTo("not leap by 100 and 400"));
     }
 
     @Test
-    public void should_return_not_leap_year_by_4_and_100(){
+    public void should_return_not_leap_year_if_divisible_by_4_and_100(){
         assertThat(LeapYear.LeapYear(year), equalTo("not leap by 4 and 100"));
     }
 
