@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 
 public class UnitTest {
     private static final LeapYear LeapYear = new LeapYear();
-    public int year = 2012;
+    public int year = 2019;
 
     @Test
     public void should_return_leap_year_if_divisible_by_400(){
@@ -23,5 +23,10 @@ public class UnitTest {
     @Test
     public void should_return_not_leap_year_by_4_and_100(){
         assertThat(LeapYear.LeapYear(year), equalTo("not leap by 4 and 100"));
+    }
+
+    @Test
+    public void should_return_not_leap_year_if_divisible_by_4(){
+        assertThat(LeapYear.LeapYear(year), equalTo("not leap if divisible by 4"));
     }
 }
