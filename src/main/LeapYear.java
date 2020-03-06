@@ -1,5 +1,7 @@
 package main;
 
+//class who calcul a leap year
+
 public class LeapYear {
     public String LeapYear(int year)
     {
